@@ -49,19 +49,20 @@ $newArr = removeFirstAndLast($arr);
 print_r($newArr);
 // 4.Write a PHP function to check if a string contains only letters and whitespace.
 
-function filter_letters_and_whitespace($arr) {
-  $result = array();
-  foreach ($arr as $str) {
-    if (preg_match('/^[a-zA-Z0-9]+s/', $str)) {
-      $result[] = $str;
-    }
+function contains_only_letters_and_whitespace($str) {
+    return preg_match('/^[a-zA-Z\s]+$/', $str);
+    
   }
-  return $result;
-}
-$input = array('Hello', 'world', "123", 'How are you?', 'Fine, thank you!');
-$output = filter_letters_and_whitespace($input);
-print_r($output);
+  
 
+  $input = "Hello world   ";
+  $output = contains_only_letters_and_whitespace($input);
+  echo "Input string: " . $input . "\n";
+  echo "Output: " . $output . "\n";
+
+  $output={}
+
+  
 
 // 5.Write a PHP function to find the second largest number in an array of numbers.
 function findSecondLargest($arr) {
