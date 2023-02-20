@@ -52,7 +52,7 @@ print_r($newArr);
 function filter_letters_and_whitespace($arr) {
   $result = array();
   foreach ($arr as $str) {
-    if (preg_match('/^[a-zA-Z]+$/', $str)) {
+    if (preg_match('/^[a-zA-Z0-9]+s/', $str)) {
       $result[] = $str;
     }
   }
