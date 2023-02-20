@@ -94,5 +94,7 @@ $myArray = array(5, 2, 8, 3, 9, 6,10,100);
 echo findSecondLargest($myArray); // Output: 10
 
 
+//myphpmypc
+
 ?>
 
